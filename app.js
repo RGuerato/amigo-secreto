@@ -27,4 +27,7 @@ function sortearAmigo(){
         alert("A lista de amigos está vazio. Não há ninguém para sortear.");
         return;
     }
+    let indiceAleatorio = Math.floor(Math.random() * listaNomes.length);
+    let nomeSorteado = listaNomes[indiceAleatorio];
+    document.getElementById("resultado").innerHTML = "O amigo sorteado é: " + nomeSorteado;
 }
